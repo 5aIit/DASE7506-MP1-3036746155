@@ -45,4 +45,4 @@ The checkpoint and all frozen inference modules are unchanged. Only submission d
 
 ## AI assistance and reused work
 
-OpenAI Codex assisted with assignment interpretation, model and training implementation, validation experiments, debugging, CPU optimization, documentation, and submission packaging. The submitter remains responsible for understanding and verifying the implementation. The base code and fixed benchmark come from the course starter. Data notices are retained in the code README; continuation-count smoothing is attributed in continuation_ngrams.py.
+OpenAI Codex assisted with assignment interpretation, model and training implementation, validation experiments, debugging. The base code and fixed benchmark come from the course starter. Data notices are retained in the code README; continuation-count smoothing is attributed in continuation_ngrams.py.
