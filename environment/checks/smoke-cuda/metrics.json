@@ -1,0 +1,43 @@
+{
+  "protocol": "7506-mp1-wt2-v2",
+  "implementation": "model",
+  "config": {
+    "vocab": 2048,
+    "width": 128,
+    "heads": 4,
+    "depth": 4,
+    "context": 256
+  },
+  "seed": 17,
+  "parameters": 1088256,
+  "precision": "fp32",
+  "train_tokens": 81920,
+  "preparation_seconds": 25.466012800000044,
+  "train_seconds": 0.978516000000127,
+  "validation": {
+    "bpb": 3.579821993618698,
+    "token_ppl": 1927.565336074716,
+    "nll_nats": 2848599.7324118614,
+    "targets": 376599,
+    "utf8_bytes": 1148007,
+    "seconds": 0.7494320000000698
+  },
+  "history": [
+    {
+      "step": 10,
+      "loss": 7.568997859954834,
+      "seconds": 0.978389800000059
+    }
+  ],
+  "validation_history": [],
+  "intermediate_validation_seconds": 0.0,
+  "process_seconds": 27.377886799999942,
+  "torch_version": "2.7.1+cu126",
+  "threads": 4,
+  "checkpoint_sha256": "dba9586202506bfe8573ee64b86988ee1a6c330d0cae29194e18b8ddc50290af",
+  "implementation_sha256": "6cce142a31d396f017319543f50d70f30fa6da740729af01c8baed13c6f671f9",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+  "peak_allocated_gb": 0.53879296,
+  "peak_reserved_gb": 0.610271232
+}
