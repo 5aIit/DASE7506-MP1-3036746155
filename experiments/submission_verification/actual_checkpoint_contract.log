@@ -1,0 +1,14 @@
+{
+  "checkpoint_sha256": "5b99639aa30264a10ec0d9a7608317fec5e926b521ce205b64c2b9bfde1183e1",
+  "passed": true,
+  "checks": [
+    "finite normalized distribution",
+    "no future inputs",
+    "batch independence",
+    "window/call reset",
+    "short prefixes",
+    "finite neural gradients",
+    "embedded training-asset hash"
+  ]
+}
+

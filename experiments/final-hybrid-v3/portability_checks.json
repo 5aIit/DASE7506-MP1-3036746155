@@ -1,0 +1,27 @@
+{
+  "passed": true,
+  "isolated_python": true,
+  "bytecode_disabled": true,
+  "checkpoint_sha256": "5b99639aa30264a10ec0d9a7608317fec5e926b521ce205b64c2b9bfde1183e1",
+  "input": "Random 2x256 token IDs; no benchmark text read",
+  "output_shape": [
+    2,
+    256,
+    2048
+  ],
+  "normalization_max_abs_error": 1.4603137969970703e-06,
+  "causal_max_abs_error": 0.0,
+  "repeated_call_max_abs_error": 0.0,
+  "batch_independence_max_abs_error": 0.0,
+  "module_origins": {
+    "hybrid": "E:\\hku\\DASE7506\\MP1\\experiments\\final-hybrid-v3\\inference_snapshot\\hybrid.py",
+    "calibrated_members": "E:\\hku\\DASE7506\\MP1\\experiments\\final-hybrid-v3\\inference_snapshot\\calibrated_members.py",
+    "local_cache": "E:\\hku\\DASE7506\\MP1\\experiments\\final-hybrid-v3\\inference_snapshot\\local_cache.py",
+    "train_ngrams": "E:\\hku\\DASE7506\\MP1\\experiments\\final-hybrid-v3\\inference_snapshot\\train_ngrams.py",
+    "continuation_ngrams": "E:\\hku\\DASE7506\\MP1\\experiments\\final-hybrid-v3\\inference_snapshot\\continuation_ngrams.py",
+    "student_fast": "E:\\hku\\DASE7506\\MP1\\experiments\\final-hybrid-v3\\inference_snapshot\\student_fast.py",
+    "student": "E:\\hku\\DASE7506\\MP1\\experiments\\final-hybrid-v3\\inference_snapshot\\student.py"
+  },
+  "external_count_sidecar_required": false,
+  "analysis_probability_files_required": false
+}

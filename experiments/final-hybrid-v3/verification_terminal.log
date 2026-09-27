@@ -1,0 +1,102 @@
+Python executable: E:\hku\DASE7506\MP1\environment\venvs\mp1-py312\Scripts\python.exe
+PyTorch: 2.7.1+cu126
+NumPy: 2.5.3; tokenizers: 0.21.4
+CUDA GPU: NVIDIA GeForce RTX 3050 Ti Laptop GPU
+Environment check passed.
+
+
+> E:\hku\DASE7506\MP1\environment\venvs\mp1-py312\Scripts\python.exe evaluate.py --checkpoint E:\hku\DASE7506\MP1\experiments\baseline-gpt-s17-fp32\run\checkpoint.pt --device cpu --precision fp32 --threads 4 --split validation --output E:\hku\DASE7506\MP1\experiments\final-compliance-baseline\validation_cpu_fp32.json
+{
+  "bpb": 2.071080469943088,
+  "token_ppl": 79.52772855725112,
+  "nll_nats": 1648037.048490102,
+  "targets": 376599,
+  "utf8_bytes": 1148007,
+  "seconds": 10.085618199998862,
+  "protocol": "7506-mp1-wt2-v2",
+  "split": "validation",
+  "precision": "fp32",
+  "checkpoint_sha256": "4f4b05f61016cc22cd2216aa6f08288ce31e70b5ac30dc6003bc09e652a0fbfb",
+  "implementation_sha256": "6cce142a31d396f017319543f50d70f30fa6da740729af01c8baed13c6f671f9",
+  "evaluator_sha256": "128bcb2dab0be0d427505bddb4671e3ab3a8f78e114be79a689c0f9029af133d",
+  "tokenizer_sha256": "020d1bc6aa4449c4f352b2e03d0e0fb4f39287f15297705e421b1fa7d817262e",
+  "device": "cpu",
+  "device_name": "CPU",
+  "peak_allocated_gb": 0.0,
+  "peak_reserved_gb": 0.0
+}
+
+> E:\hku\DASE7506\MP1\environment\venvs\mp1-py312\Scripts\python.exe evaluate.py --checkpoint E:\hku\DASE7506\MP1\experiments\baseline-gpt-s17-fp32\run\checkpoint.pt --device cpu --precision fp32 --threads 4 --split test --output E:\hku\DASE7506\MP1\experiments\final-compliance-baseline\test_cpu_fp32.json
+{
+  "bpb": 2.1012562769423675,
+  "token_ppl": 80.84641556208636,
+  "nll_nats": 1881790.9185216965,
+  "targets": 428405,
+  "utf8_bytes": 1292013,
+  "seconds": 10.812416000000667,
+  "protocol": "7506-mp1-wt2-v2",
+  "split": "test",
+  "precision": "fp32",
+  "checkpoint_sha256": "4f4b05f61016cc22cd2216aa6f08288ce31e70b5ac30dc6003bc09e652a0fbfb",
+  "implementation_sha256": "6cce142a31d396f017319543f50d70f30fa6da740729af01c8baed13c6f671f9",
+  "evaluator_sha256": "128bcb2dab0be0d427505bddb4671e3ab3a8f78e114be79a689c0f9029af133d",
+  "tokenizer_sha256": "020d1bc6aa4449c4f352b2e03d0e0fb4f39287f15297705e421b1fa7d817262e",
+  "device": "cpu",
+  "device_name": "CPU",
+  "peak_allocated_gb": 0.0,
+  "peak_reserved_gb": 0.0
+}
+
+CPU FP32 evaluation complete. Results are in: E:\hku\DASE7506\MP1\experiments\final-compliance-baseline
+RAM measurements: E:\hku\DASE7506\MP1\experiments\final-compliance-baseline\resource_measurements.json
+Python executable: E:\hku\DASE7506\MP1\environment\venvs\mp1-py312\Scripts\python.exe
+PyTorch: 2.7.1+cu126
+NumPy: 2.5.3; tokenizers: 0.21.4
+CUDA GPU: NVIDIA GeForce RTX 3050 Ti Laptop GPU
+Environment check passed.
+
+
+> E:\hku\DASE7506\MP1\environment\venvs\mp1-py312\Scripts\python.exe evaluate.py --checkpoint E:\hku\DASE7506\MP1\experiments\final-hybrid-v3\checkpoint.pt --device cpu --precision fp32 --threads 4 --split validation --output E:\hku\DASE7506\MP1\experiments\final-hybrid-v3\validation_cpu_fp32.json
+{
+  "bpb": 1.4435484111417993,
+  "token_ppl": 21.118658835053626,
+  "nll_nats": 1148686.0589806447,
+  "targets": 376599,
+  "utf8_bytes": 1148007,
+  "seconds": 45.682472000000416,
+  "protocol": "7506-mp1-wt2-v2",
+  "split": "validation",
+  "precision": "fp32",
+  "checkpoint_sha256": "5b99639aa30264a10ec0d9a7608317fec5e926b521ce205b64c2b9bfde1183e1",
+  "implementation_sha256": "7dd3f2ead1a7109ed0425b7b49ffb064b54ff4b1f802ed1743b34920c908ce65",
+  "evaluator_sha256": "128bcb2dab0be0d427505bddb4671e3ab3a8f78e114be79a689c0f9029af133d",
+  "tokenizer_sha256": "020d1bc6aa4449c4f352b2e03d0e0fb4f39287f15297705e421b1fa7d817262e",
+  "device": "cpu",
+  "device_name": "CPU",
+  "peak_allocated_gb": 0.0,
+  "peak_reserved_gb": 0.0
+}
+
+> E:\hku\DASE7506\MP1\environment\venvs\mp1-py312\Scripts\python.exe evaluate.py --checkpoint E:\hku\DASE7506\MP1\experiments\final-hybrid-v3\checkpoint.pt --device cpu --precision fp32 --threads 4 --split test --output E:\hku\DASE7506\MP1\experiments\final-hybrid-v3\test_cpu_fp32.json
+{
+  "bpb": 1.4583128252943809,
+  "token_ppl": 21.084036947548032,
+  "nll_nats": 1305999.587540055,
+  "targets": 428405,
+  "utf8_bytes": 1292013,
+  "seconds": 51.42369119999785,
+  "protocol": "7506-mp1-wt2-v2",
+  "split": "test",
+  "precision": "fp32",
+  "checkpoint_sha256": "5b99639aa30264a10ec0d9a7608317fec5e926b521ce205b64c2b9bfde1183e1",
+  "implementation_sha256": "7dd3f2ead1a7109ed0425b7b49ffb064b54ff4b1f802ed1743b34920c908ce65",
+  "evaluator_sha256": "128bcb2dab0be0d427505bddb4671e3ab3a8f78e114be79a689c0f9029af133d",
+  "tokenizer_sha256": "020d1bc6aa4449c4f352b2e03d0e0fb4f39287f15297705e421b1fa7d817262e",
+  "device": "cpu",
+  "device_name": "CPU",
+  "peak_allocated_gb": 0.0,
+  "peak_reserved_gb": 0.0
+}
+
+CPU FP32 evaluation complete. Results are in: E:\hku\DASE7506\MP1\experiments\final-hybrid-v3
+RAM measurements: E:\hku\DASE7506\MP1\experiments\final-hybrid-v3\resource_measurements.json

@@ -1,0 +1,29 @@
+{
+  "split": "validation",
+  "discount": 0.85,
+  "baseline_source": "E:\\hku\\DASE7506\\MP1\\environment\\temp\\continuation_ngrams_scale_only.py",
+  "batches": 5,
+  "batch_size": 32,
+  "context": 256,
+  "max_probability_difference": 1.1920928955078125e-07,
+  "max_normalization_error": 3.5762786865234375e-07,
+  "max_causal_prefix_difference": 0.0,
+  "old_precompute_seconds": 0.037585400001262315,
+  "new_precompute_seconds": 0.08543120000103954,
+  "extra_runtime_cache_bytes": 29571998,
+  "old_seconds": [
+    0.3330210999993142,
+    0.3320993000015733,
+    0.3358723000055761,
+    0.3386763999951654
+  ],
+  "new_seconds": [
+    0.28935330000240356,
+    0.28643469999951776,
+    0.2989763000005041,
+    0.28959300000133226
+  ],
+  "old_median_seconds": 0.33444670000244514,
+  "new_median_seconds": 0.2894731500018679,
+  "speedup": 1.1553634594444666
+}

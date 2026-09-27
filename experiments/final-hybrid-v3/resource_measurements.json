@@ -1,0 +1,24 @@
+{
+  "checkpoint": "E:\\hku\\DASE7506\\MP1\\experiments\\final-hybrid-v3\\checkpoint.pt",
+  "checkpoint_sha256": "5b99639aa30264a10ec0d9a7608317fec5e926b521ce205b64c2b9bfde1183e1",
+  "cpu_fp32_evaluation": {
+    "validation": {
+      "sampled_peak_process_tree_working_set_bytes": 2635763712,
+      "peak_ram_upper_bound_bytes": 2652872704,
+      "peak_ram_upper_bound_gib": 2.4706802368164062,
+      "ram_limit_gib": 4.0,
+      "ram_limit_pass": true,
+      "measurement": "Windows process-tree working set; conservative sum of per-process PeakWorkingSetSize",
+      "scope": "run_baseline.py process plus evaluate.py process tree; includes imports, data/model loading, scoring, and saving"
+    },
+    "test": {
+      "sampled_peak_process_tree_working_set_bytes": 2645123072,
+      "peak_ram_upper_bound_bytes": 2652270592,
+      "peak_ram_upper_bound_gib": 2.4701194763183594,
+      "ram_limit_gib": 4.0,
+      "ram_limit_pass": true,
+      "measurement": "Windows process-tree working set; conservative sum of per-process PeakWorkingSetSize",
+      "scope": "run_baseline.py process plus evaluate.py process tree; includes imports, data/model loading, scoring, and saving"
+    }
+  }
+}

@@ -1,0 +1,354 @@
+{
+  "split": "validation",
+  "source": "training-only continuation counts from raw 1..4 gram asset",
+  "targets": 376599,
+  "utf8_bytes": 1148007,
+  "base_path": "environment\\temp\\hybrid_val_local_target_probs.npz",
+  "seconds": 2.6861169999974663,
+  "checks": "full normalization, target-probability and short-prefix consistency passed",
+  "best": {
+    "discount": 0.5,
+    "weight": 0.125,
+    "bpb": 1.4435484115094825,
+    "first_half_mean_nll": 2.9950790365498814,
+    "second_half_mean_nll": 3.105234581890166
+  },
+  "candidates": [
+    {
+      "discount": 0.5,
+      "weight": 0.125,
+      "bpb": 1.4435484115094825,
+      "first_half_mean_nll": 2.9950790365498814,
+      "second_half_mean_nll": 3.105234581890166
+    },
+    {
+      "discount": 0.5,
+      "weight": 0.1,
+      "bpb": 1.4435874702348817,
+      "first_half_mean_nll": 2.9951313098697936,
+      "second_half_mean_nll": 3.1053473672908654
+    },
+    {
+      "discount": 0.25,
+      "weight": 0.1,
+      "bpb": 1.4438737745066892,
+      "first_half_mean_nll": 2.995677928663099,
+      "second_half_mean_nll": 3.106010645907977
+    },
+    {
+      "discount": 0.65,
+      "weight": 0.125,
+      "bpb": 1.4439789804622472,
+      "first_half_mean_nll": 2.996057546133641,
+      "second_half_mean_nll": 3.106075620773342
+    },
+    {
+      "discount": 0.5,
+      "weight": 0.15,
+      "bpb": 1.4441490507847494,
+      "first_half_mean_nll": 2.9963756491767772,
+      "second_half_mean_nll": 3.106476220358885
+    },
+    {
+      "discount": 0.25,
+      "weight": 0.075,
+      "bpb": 1.4442113527394853,
+      "first_half_mean_nll": 2.9963817939721586,
+      "second_half_mean_nll": 3.1067333577063434
+    },
+    {
+      "discount": 0.65,
+      "weight": 0.1,
+      "bpb": 1.44423019003305,
+      "first_half_mean_nll": 2.9965357218361706,
+      "second_half_mean_nll": 3.1066590352632293
+    },
+    {
+      "discount": 0.65,
+      "weight": 0.15,
+      "bpb": 1.444331279851983,
+      "first_half_mean_nll": 2.99685294908307,
+      "second_half_mean_nll": 3.10676900562066
+    },
+    {
+      "discount": 0.25,
+      "weight": 0.125,
+      "bpb": 1.4444203710352594,
+      "first_half_mean_nll": 2.9968360763761583,
+      "second_half_mean_nll": 3.10716236906932
+    },
+    {
+      "discount": 0.5,
+      "weight": 0.075,
+      "bpb": 1.444438412399596,
+      "first_half_mean_nll": 2.996895025781789,
+      "second_half_mean_nll": 3.107179661059293
+    },
+    {
+      "discount": 0.75,
+      "weight": 0.125,
+      "bpb": 1.4448697161726758,
+      "first_half_mean_nll": 2.9979847051232986,
+      "second_half_mean_nll": 3.1079126360555738
+    },
+    {
+      "discount": 0.75,
+      "weight": 0.15,
+      "bpb": 1.4451394184302313,
+      "first_half_mean_nll": 2.9986228241473407,
+      "second_half_mean_nll": 3.1084142564013213
+    },
+    {
+      "discount": 0.75,
+      "weight": 0.1,
+      "bpb": 1.445176546079701,
+      "first_half_mean_nll": 2.998563632525542,
+      "second_half_mean_nll": 3.108630345609339
+    },
+    {
+      "discount": 0.65,
+      "weight": 0.075,
+      "bpb": 1.4452444156457587,
+      "first_half_mean_nll": 2.9986231797489693,
+      "second_half_mean_nll": 3.1088576090060296
+    },
+    {
+      "discount": 0.25,
+      "weight": 0.15,
+      "bpb": 1.4456633121556306,
+      "first_half_mean_nll": 2.9994605380045765,
+      "second_half_mean_nll": 3.1097904718389304
+    },
+    {
+      "discount": 0.25,
+      "weight": 0.05,
+      "bpb": 1.4457854486509905,
+      "first_half_mean_nll": 2.9996888911103676,
+      "second_half_mean_nll": 3.110078257109883
+    },
+    {
+      "discount": 0.75,
+      "weight": 0.075,
+      "bpb": 1.4462088942883706,
+      "first_half_mean_nll": 3.000672992584362,
+      "second_half_mean_nll": 3.1108836016820605
+    },
+    {
+      "discount": 0.5,
+      "weight": 0.05,
+      "bpb": 1.446419908310267,
+      "first_half_mean_nll": 3.0010400316983175,
+      "second_half_mean_nll": 3.1114082896197415
+    },
+    {
+      "discount": 0.65,
+      "weight": 0.2,
+      "bpb": 1.4464875888424409,
+      "first_half_mean_nll": 3.0015085150004337,
+      "second_half_mean_nll": 3.1112258202703336
+    },
+    {
+      "discount": 0.85,
+      "weight": 0.125,
+      "bpb": 1.4465398207826452,
+      "first_half_mean_nll": 3.001543407077391,
+      "second_half_mean_nll": 3.111411655569264
+    },
+    {
+      "discount": 0.85,
+      "weight": 0.1,
+      "bpb": 1.446792879406255,
+      "first_half_mean_nll": 3.001991129050699,
+      "second_half_mean_nll": 3.1120333375472002
+    },
+    {
+      "discount": 0.85,
+      "weight": 0.15,
+      "bpb": 1.4468315279292887,
+      "first_half_mean_nll": 3.002245721616448,
+      "second_half_mean_nll": 3.1119420713004984
+    },
+    {
+      "discount": 0.5,
+      "weight": 0.2,
+      "bpb": 1.4468858391866837,
+      "first_half_mean_nll": 3.002207160059262,
+      "second_half_mean_nll": 3.112210146839335
+    },
+    {
+      "discount": 0.75,
+      "weight": 0.2,
+      "bpb": 1.4470708824960057,
+      "first_half_mean_nll": 3.0028393634380026,
+      "second_half_mean_nll": 3.112359922169579
+    },
+    {
+      "discount": 0.65,
+      "weight": 0.05,
+      "bpb": 1.4473140034092193,
+      "first_half_mean_nll": 3.002933943480019,
+      "second_half_mean_nll": 3.1132927483884085
+    },
+    {
+      "discount": 0.85,
+      "weight": 0.075,
+      "bpb": 1.4477265153211873,
+      "first_half_mean_nll": 3.0038742783451173,
+      "second_half_mean_nll": 3.1140956544577505
+    },
+    {
+      "discount": 0.75,
+      "weight": 0.05,
+      "bpb": 1.4482377043964316,
+      "first_half_mean_nll": 3.0048814040043945,
+      "second_half_mean_nll": 3.115248770354884
+    },
+    {
+      "discount": 0.85,
+      "weight": 0.2,
+      "bpb": 1.4487391077171214,
+      "first_half_mean_nll": 3.006447921949935,
+      "second_half_mean_nll": 3.115801143272405
+    },
+    {
+      "discount": 0.25,
+      "weight": 0.025,
+      "bpb": 1.449436710097915,
+      "first_half_mean_nll": 3.0073612555332407,
+      "second_half_mean_nll": 3.117835815572178
+    },
+    {
+      "discount": 0.85,
+      "weight": 0.05,
+      "bpb": 1.449585368017601,
+      "first_half_mean_nll": 3.0077056527696495,
+      "second_half_mean_nll": 3.118119634334903
+    },
+    {
+      "discount": 0.95,
+      "weight": 0.1,
+      "bpb": 1.4497772946751004,
+      "first_half_mean_nll": 3.0082273607847174,
+      "second_half_mean_nll": 3.1184089928139773
+    },
+    {
+      "discount": 0.95,
+      "weight": 0.125,
+      "bpb": 1.4497981160347446,
+      "first_half_mean_nll": 3.0083754722718,
+      "second_half_mean_nll": 3.1183488711906597
+    },
+    {
+      "discount": 0.25,
+      "weight": 0.2,
+      "bpb": 1.4498262774907018,
+      "first_half_mean_nll": 3.008239950959359,
+      "second_half_mean_nll": 3.118603399406542
+    },
+    {
+      "discount": 0.65,
+      "weight": 0.25,
+      "bpb": 1.45024254442522,
+      "first_half_mean_nll": 3.009540259434353,
+      "second_half_mean_nll": 3.1190622021443413
+    },
+    {
+      "discount": 0.5,
+      "weight": 0.025,
+      "bpb": 1.4502797601242416,
+      "first_half_mean_nll": 3.009131770003978,
+      "second_half_mean_nll": 3.1196279593949248
+    },
+    {
+      "discount": 0.95,
+      "weight": 0.15,
+      "bpb": 1.4503206665737476,
+      "first_half_mean_nll": 3.009582401628914,
+      "second_half_mean_nll": 3.1193501969117503
+    },
+    {
+      "discount": 0.95,
+      "weight": 0.075,
+      "bpb": 1.4503754467224128,
+      "first_half_mean_nll": 3.009384165385118,
+      "second_half_mean_nll": 3.1197799277789415
+    },
+    {
+      "discount": 0.75,
+      "weight": 0.25,
+      "bpb": 1.4505391626484885,
+      "first_half_mean_nll": 3.010303739384203,
+      "second_half_mean_nll": 3.119552206530367
+    },
+    {
+      "discount": 0.65,
+      "weight": 0.025,
+      "bpb": 1.4511159988737907,
+      "first_half_mean_nll": 3.0108834553726735,
+      "second_half_mean_nll": 3.121410148414608
+    },
+    {
+      "discount": 0.5,
+      "weight": 0.25,
+      "bpb": 1.4513138746602074,
+      "first_half_mean_nll": 3.011605720749453,
+      "second_half_mean_nll": 3.121524091047665
+    },
+    {
+      "discount": 0.95,
+      "weight": 0.05,
+      "bpb": 1.4518009556837057,
+      "first_half_mean_nll": 3.0122823765206275,
+      "second_half_mean_nll": 3.1229057967537845
+    },
+    {
+      "discount": 0.75,
+      "weight": 0.025,
+      "bpb": 1.4518834790822595,
+      "first_half_mean_nll": 3.01248454036736,
+      "second_half_mean_nll": 3.1230523699810906
+    },
+    {
+      "discount": 0.85,
+      "weight": 0.25,
+      "bpb": 1.452116950254351,
+      "first_half_mean_nll": 3.01375875082473,
+      "second_half_mean_nll": 3.1227647931648734
+    },
+    {
+      "discount": 0.95,
+      "weight": 0.2,
+      "bpb": 1.452600691445772,
+      "first_half_mean_nll": 3.014604858122645,
+      "second_half_mean_nll": 3.1239629344327873
+    },
+    {
+      "discount": 0.85,
+      "weight": 0.025,
+      "bpb": 1.4529215908557616,
+      "first_half_mean_nll": 3.014636463327726,
+      "second_half_mean_nll": 3.125287419652802
+    },
+    {
+      "discount": 0.95,
+      "weight": 0.025,
+      "bpb": 1.4545134897161172,
+      "first_half_mean_nll": 3.017880950581899,
+      "second_half_mean_nll": 3.1287701621693467
+    },
+    {
+      "discount": 0.25,
+      "weight": 0.25,
+      "bpb": 1.4558514893119125,
+      "first_half_mean_nll": 3.020938239612926,
+      "second_half_mean_nll": 3.131367147872982
+    },
+    {
+      "discount": 0.95,
+      "weight": 0.25,
+      "bpb": 1.4562686592246765,
+      "first_half_mean_nll": 3.022562125810143,
+      "second_half_mean_nll": 3.1315061905067965
+    }
+  ]
+}

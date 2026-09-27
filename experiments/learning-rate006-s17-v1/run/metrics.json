@@ -1,0 +1,139 @@
+{
+  "protocol": "7506-mp1-wt2-v2",
+  "implementation": "model",
+  "config": {
+    "vocab": 2048,
+    "width": 128,
+    "heads": 4,
+    "depth": 4,
+    "context": 256
+  },
+  "seed": 17,
+  "parameters": 1088256,
+  "precision": "fp32",
+  "train_tokens": 9830400,
+  "preparation_seconds": 10.302147299999888,
+  "learning_rate": 0.006,
+  "weight_decay": 0.1,
+  "ema_decay": null,
+  "ema_start_step": null,
+  "train_seconds": 37.5733108000004,
+  "validation": {
+    "bpb": 1.920897259606589,
+    "token_ppl": 57.903333349865775,
+    "nll_nats": 1528530.5888002315,
+    "targets": 376599,
+    "utf8_bytes": 1148007,
+    "seconds": 0.6731883999991624
+  },
+  "history": [
+    {
+      "step": 100,
+      "loss": 5.581288814544678,
+      "seconds": 3.5515228000003844
+    },
+    {
+      "step": 200,
+      "loss": 5.031043529510498,
+      "seconds": 6.653152800000498
+    },
+    {
+      "step": 300,
+      "loss": 4.7916107177734375,
+      "seconds": 9.744129600000633
+    },
+    {
+      "step": 400,
+      "loss": 4.54964017868042,
+      "seconds": 12.83457290000024
+    },
+    {
+      "step": 500,
+      "loss": 4.526422023773193,
+      "seconds": 15.921002400000361
+    },
+    {
+      "step": 600,
+      "loss": 4.343564510345459,
+      "seconds": 19.0102880000004
+    },
+    {
+      "step": 700,
+      "loss": 4.204376220703125,
+      "seconds": 22.10121110000091
+    },
+    {
+      "step": 800,
+      "loss": 4.199315071105957,
+      "seconds": 25.193446800000856
+    },
+    {
+      "step": 900,
+      "loss": 4.061247825622559,
+      "seconds": 28.295193400000244
+    },
+    {
+      "step": 1000,
+      "loss": 4.019380569458008,
+      "seconds": 31.390898700000434
+    },
+    {
+      "step": 1100,
+      "loss": 3.9040298461914062,
+      "seconds": 34.480830100000276
+    },
+    {
+      "step": 1200,
+      "loss": 3.892244577407837,
+      "seconds": 37.57284900000104
+    }
+  ],
+  "validation_history": [
+    {
+      "step": 300,
+      "bpb": 2.274434163691843,
+      "token_ppl": 122.21521308552244,
+      "nll_nats": 1809853.272489582,
+      "targets": 376599,
+      "utf8_bytes": 1148007,
+      "seconds": 0.7237760999996681
+    },
+    {
+      "step": 600,
+      "bpb": 2.114435843544261,
+      "token_ppl": 87.15723836795618,
+      "nll_nats": 1682536.5587615818,
+      "targets": 376599,
+      "utf8_bytes": 1148007,
+      "seconds": 0.6703520000000935
+    },
+    {
+      "step": 900,
+      "bpb": 1.990993185167273,
+      "token_ppl": 67.14702983944429,
+      "nll_nats": 1584308.5674682385,
+      "targets": 376599,
+      "utf8_bytes": 1148007,
+      "seconds": 0.6741947999998956
+    },
+    {
+      "step": 1200,
+      "bpb": 1.920897259606589,
+      "token_ppl": 57.903333349865775,
+      "nll_nats": 1528530.5888002315,
+      "targets": 376599,
+      "utf8_bytes": 1148007,
+      "seconds": 0.672804100000576
+    }
+  ],
+  "intermediate_validation_seconds": 2.7411270000002332,
+  "process_seconds": 51.44590919999973,
+  "torch_version": "2.7.1+cu126",
+  "threads": 4,
+  "checkpoint_sha256": "77ce4d09f5e6c2633b375e3a7d1bc34ca043c6fedfcb9270922760978308688c",
+  "implementation_sha256": "6cce142a31d396f017319543f50d70f30fa6da740729af01c8baed13c6f671f9",
+  "device": "cuda:0",
+  "device_name": "NVIDIA GeForce RTX 3050 Ti Laptop GPU",
+  "peak_allocated_gb": 0.53879296,
+  "peak_reserved_gb": 0.610271232
+}

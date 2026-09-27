@@ -1,0 +1,42 @@
+{
+  "protocol": "7506-mp1-wt2-v2",
+  "split": "validation",
+  "large": "E:\\hku\\DASE7506\\MP1\\experiments\\wide-drop03-24000-bf16-s17\\run\\checkpoint.pt",
+  "small": "E:\\hku\\DASE7506\\MP1\\experiments\\medium-160x4-drop01-16000-s23\\run\\checkpoint.pt",
+  "ngram_asset": "E:\\hku\\DASE7506\\MP1\\experiments\\train_ngram_counts_1to4.bin",
+  "large_sha256": "d84aa1b79f38d91eada98a9a5c72ed0a0825ea99ae7c58d27998875d1353e931",
+  "small_sha256": "8d0894901e35e91a97f3e4b5ac27ea988d5c5f968f3b5b2e22921d0496e0d7cc",
+  "ngram_asset_sha256": "1c318f7fb8669d9bacba4a73be691bb9deab1fad5735c7a90ee2a55e475a5d09",
+  "selector_sha256": "9474a94f8c647df9831dff322d307a9592f8edfed9257078bd7f27f0ee925ea7",
+  "train_text_sha256": "c58d555a94ada0882d1e8c0b3dc7ba68e1c269da5ad9e7a057300245d130c4e8",
+  "validation_text_sha256": "714a24a5de7459876f7cfdc64837e551dd7cde2a51f95b763ee083fff273e307",
+  "tokenizer_sha256": "020d1bc6aa4449c4f352b2e03d0e0fb4f39287f15297705e421b1fa7d817262e",
+  "train_tokens": 3613343,
+  "ngram_method": "continuation",
+  "ngram_discount": 0.5,
+  "targets": 376599,
+  "utf8_bytes": 1148007,
+  "device": "cuda:0",
+  "precision": "fp32",
+  "batch_size": 2,
+  "self_check": {
+    "ngram_max_abs_error": 3.277562010857438e-11,
+    "local_max_abs_error": 1.3113021890553966e-08
+  },
+  "preparation_seconds": 9.739041500004532,
+  "prediction_seconds": 16.761812899996585,
+  "total_seconds": 28.77197310000338,
+  "selection": "Completed dropout-0.3 run, evaluated with existing frozen comparison settings; no new parameter search. BPB is supplied by the unchanged full scorer.",
+  "best": {
+    "large_temperature": 1.1,
+    "small_temperature": 1.1,
+    "small_weight": 0.25,
+    "bias_scale": 0.05,
+    "ngram_alpha": 4.0,
+    "ngram_weight": 0.125,
+    "ngram_method": "continuation",
+    "ngram_discount": 0.5,
+    "bpb": null
+  },
+  "candidates": []
+}

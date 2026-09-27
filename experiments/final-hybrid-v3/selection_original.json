@@ -1,0 +1,27 @@
+{
+  "split": "validation",
+  "large": "E:\\hku\\DASE7506\\MP1\\experiments\\wide-drop02-continue4000-s23\\run\\checkpoint.pt",
+  "small": "E:\\hku\\DASE7506\\MP1\\experiments\\medium-160x4-drop01-16000-s23\\run\\checkpoint.pt",
+  "large_sha256": "fb92a5428a38369e00adad6f68b61065f73b9879a167615f8abe2a54e2c5dc97",
+  "small_sha256": "8d0894901e35e91a97f3e4b5ac27ea988d5c5f968f3b5b2e22921d0496e0d7cc",
+  "targets": 376599,
+  "utf8_bytes": 1148007,
+  "seconds": 7.25532309999835,
+  "selection": "Validation-only member grid followed by validation-only continuation-count smoothing grid. No test scored.",
+  "best": {
+    "large_temperature": 1.1,
+    "small_temperature": 1.1,
+    "small_weight": 0.25,
+    "bias_scale": 0.05,
+    "ngram_weight": 0.125,
+    "ngram_alpha": 4.0,
+    "ensemble_bpb": 1.4826855328033566,
+    "local_cache_bpb": 1.4608606031218296,
+    "bpb": 1.4435484115094825,
+    "ngram_method": "continuation",
+    "ngram_discount": 0.5
+  },
+  "candidates": [],
+  "postprocessing_selection_file": "continuation_ngram_mixed_validation.json",
+  "postprocessing_selection_sha256": "7d18f92e2c3a50db85e3304735313cf10f3558ad626cf2798dda97619df9afb7"
+}

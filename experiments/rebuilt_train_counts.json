@@ -1,0 +1,8 @@
+{
+  "train_tokens": 3613343,
+  "bytes": 30522560,
+  "sha256": "1c318f7fb8669d9bacba4a73be691bb9deab1fad5735c7a90ee2a55e475a5d09",
+  "seconds": 8.719762999997329,
+  "train_text_sha256": "c58d555a94ada0882d1e8c0b3dc7ba68e1c269da5ad9e7a057300245d130c4e8",
+  "tokenizer_sha256": "020d1bc6aa4449c4f352b2e03d0e0fb4f39287f15297705e421b1fa7d817262e"
+}

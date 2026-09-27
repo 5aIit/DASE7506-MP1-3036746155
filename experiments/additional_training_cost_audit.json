@@ -1,0 +1,144 @@
+{
+  "as_of_utc": "2026-09-26 18:16:00 UTC",
+  "scope": "experiments/*/run/metrics.json, environment/checks/**/metrics.json, and experiments/experiment_log.csv only; excludes source_snapshot, copied checkpoints, inference-only bundles, and other directories",
+  "unit": "processed next-token targets in optimizer updates",
+  "counting_rule": "For completed runs, count the full training_run_tokens when present; otherwise use metrics.train_tokens only when it represents the completed run, not a selected checkpoint. One optimizer run is counted once by its unique run metrics path and checkpoint SHA-256. A continuation contributes only its new optimizer updates. An ensemble contributes no additional optimizer updates.",
+  "inventory": {
+    "csv_rows": 24,
+    "distinct_csv_run_ids": 24,
+    "metrics_files_in_scope": 31,
+    "distinct_metrics_checkpoint_sha256": 31,
+    "csv_training_rows_matched_to_metrics_by_checkpoint_sha256": 22,
+    "csv_training_rows_without_metrics": 1,
+    "csv_derived_ensemble_rows_without_new_training": 1,
+    "phase3_completed_training_metrics": 5,
+    "additional_completed_training_metrics": 4,
+    "p3_24000_completed_metrics_present_at_snapshot": true
+  },
+  "historical_csv_ledger": {
+    "reported_prior_search_targets": 718438400,
+    "formula": "16*1200*8192 + (8000+12000+8000+8000+16000+12000)*8192 + approximately 4500*8192 = 718438400",
+    "short_run_count": 16,
+    "short_run_steps_each": 1200,
+    "short_run_targets_each": 9830400,
+    "short_run_total_targets": 157286400,
+    "short_run_csv_ids": [
+      "baseline-gpt-s17-fp32",
+      "dropout-residual-p01-s17-v1",
+      "dropout-residual-p005-s17-v1",
+      "ema-decay099-s17-v1",
+      "weight-decay001-s17-v1",
+      "learning-rate0015-s17-v1",
+      "learning-rate002-s17-v1",
+      "learning-rate0025-s17-v1",
+      "learning-rate003-s17-v1",
+      "learning-rate0035-s17-v1",
+      "learning-rate004-s17-v1",
+      "learning-rate005-s17-v1",
+      "learning-rate006-s17-v1",
+      "lr005-wd001-s17-v1",
+      "baseline-gpt-s23-control",
+      "lr005-wd001-s23-replication"
+    ],
+    "long_run_total_verified_from_metrics": 524288000,
+    "long_runs": [
+      {
+        "csv_id": "baseline-gpt-s17-8000",
+        "metrics": "experiments/baseline-8000-lr001-wd01-s17/run/metrics.json",
+        "completed_run_targets": 65536000
+      },
+      {
+        "csv_id": "longtrain-small-s17-12000",
+        "metrics": "experiments/longtrain-12000-lr002-wd001-s17/run/metrics.json",
+        "completed_run_targets": 98304000
+      },
+      {
+        "csv_id": "scaled-256x6-nodecaydrop-s17-8000",
+        "metrics": "experiments/scaled-256x6-8000-lr0015-wd001-s17/run/metrics.json",
+        "completed_run_targets": 65536000
+      },
+      {
+        "csv_id": "scaled-256x6-drop01-s17-8000",
+        "metrics": "experiments/scaled-256x6-drop01-wd01-8000-s17/run/metrics.json",
+        "completed_run_targets": 65536000
+      },
+      {
+        "csv_id": "scaled-256x6-drop01-s17-16000",
+        "metrics": "experiments/scaled-256x6-drop01-wd01-16000-s17/run/metrics.json",
+        "completed_run_targets": 131072000,
+        "csv_selected_checkpoint_targets": 114688000,
+        "note": "CSV selected the step-14000 checkpoint but the run completed 16000 updates."
+      },
+      {
+        "csv_id": "small-256x4-best-s17-12000",
+        "metrics": "experiments/small-12000-lr002-wd001-best-s17/run/metrics.json",
+        "completed_run_targets": 98304000,
+        "csv_selected_checkpoint_targets": 90112000,
+        "note": "CSV selected the step-11000 checkpoint but the run completed 12000 updates."
+      }
+    ],
+    "historical_completed_metrics_subtotal": 681574400,
+    "interrupted_continuation": {
+      "csv_id": "wide-lowlr-finetune-s23-interrupted",
+      "metrics_found": false,
+      "checkpoint_saved": false,
+      "parent_run_csv_id": "scaled-256x6-drop01-s17-8000",
+      "csv_steps_reported_approximately": 4500,
+      "csv_best_observed_validation_step": 4000,
+      "new_targets_minimum_implied_by_csv_validation": 32768000,
+      "new_targets_at_reported_approximate_steps": 36864000,
+      "csv_including_ancestry_targets": 102400000,
+      "note": "Only the new continuation updates enter search cost; do not add the 65536000-target parent a second time. The exact interrupted update count cannot be verified from metrics."
+    },
+    "derived_ensemble": {
+      "csv_id": "final-prob-ensemble-wide69-small31",
+      "new_optimizer_targets": 0,
+      "note": "The CSV value 204800000 describes the selected members' training ancestry, already represented by the two source training runs."
+    },
+    "duplicate_check": "All 24 CSV run IDs are unique. The 22 CSV rows with training metrics match 22 distinct checkpoint SHA-256 values and 22 distinct run metrics paths; no repeated CSV training run was added."
+  },
+  "additional_completed_training_runs_not_in_csv_or_phase3_ledger": [
+    {
+      "id": "baseline-my-repeat1",
+      "metrics": "experiments/baseline-my-repeat1/run/metrics.json",
+      "actual_run_targets": 9830400,
+      "checkpoint_sha256": "42f4c9209f202f5034d7764e2016afa457b4d282408b3784abd3193198f8ac0d"
+    },
+    {
+      "id": "baseline-reproduction-20260926-113245",
+      "metrics": "experiments/baseline-reproduction-20260926-113245/run/metrics.json",
+      "actual_run_targets": 9830400,
+      "checkpoint_sha256": "7f9f6ad453ff6a6a00efc8ad7754d437cc5b8dcb3068793bd62f06417d495707"
+    },
+    {
+      "id": "baseline-reproduction-20260926-113644",
+      "metrics": "experiments/baseline-reproduction-20260926-113644/run/metrics.json",
+      "actual_run_targets": 9830400,
+      "checkpoint_sha256": "cedb2c883cab61ac64a0acb57ab57e514d74ce028c3d5f816270ed3df5fa43c9"
+    },
+    {
+      "id": "smoke-cuda",
+      "metrics": "environment/checks/smoke-cuda/metrics.json",
+      "actual_run_targets": 81920,
+      "checkpoint_sha256": "dba9586202506bfe8573ee64b86988ee1a6c330d0cae29194e18b8ddc50290af"
+    }
+  ],
+  "totals": {
+    "additional_three_baseline_runs": 29491200,
+    "additional_environment_smoke": 81920,
+    "additional_completed_actual_targets": 29573120,
+    "phase3_completed_actual_targets_from_phase3_ledger": 557056000,
+    "strict_metrics_supported_completed_targets_in_scope": 1268203520,
+    "strict_metrics_formula": "681574400 historical CSV-matched metrics + 557056000 phase3 completed metrics + 29573120 additional metrics = 1268203520",
+    "csv_implied_lower_bound_including_interrupted_continuation": 1300971520,
+    "csv_implied_lower_bound_formula": "1268203520 metrics-supported + 4000*8192 interrupted continuation updates observed according to CSV = 1300971520",
+    "nominal_total_using_approximate_csv_4500_steps": 1305067520,
+    "nominal_formula": "718438400 historical recorded search + 557056000 completed phase3 + 29573120 additional completed metrics = 1305067520",
+    "completed_p3_targets_included_once": 196608000
+  },
+  "unrecoverable_or_out_of_scope": [
+    "The historical interrupted continuation has no run metrics or saved child checkpoint. The CSV's approximately 4500 steps cannot establish an exact completed target count; its observed validation at step 4000 implies at least 32768000 new targets if the CSV record is accepted.",
+    "Training attempts without surviving run metrics in the scanned locations cannot be enumerated. This audit did not inspect large environment packages or infer training from copied checkpoints.",
+    "The p=0.3 24000-step experiment has now completed, with 196608000 targets verified by metrics and counted once within the five phase-3 runs. The unexecuted run_p3_continuation.ps1 file does not represent an additional training run."
+  ]
+}

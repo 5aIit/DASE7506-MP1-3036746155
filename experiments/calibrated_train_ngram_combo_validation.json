@@ -1,0 +1,16 @@
+{
+  "split": "validation",
+  "checkpoint_sha256": "5baa2582efdda60bf0d6fc7eb78dea5e46723a99d8654011ec26a2b973cb0465",
+  "asset_sha256": "1c318f7fb8669d9bacba4a73be691bb9deab1fad5735c7a90ee2a55e475a5d09",
+  "bias_asset_sha256": "50a7d21c64a2f2976bae8b92029288d2366c755ea225aa657a8a62e28165bc39",
+  "targets": 376599,
+  "utf8_bytes": 1148007,
+  "calibrated_biased_ensemble_bpb": 1.5080094787581089,
+  "plus_hierarchical_local_cache_bpb": 1.481658769543582,
+  "plus_train_4gram_bpb": 1.4683344397836104,
+  "first_half_nll_gain_nats": 15830.43628966207,
+  "second_half_nll_gain_nats": 15740.492546366502,
+  "model_seconds": 36.88298959999702,
+  "local_cache_stats_seconds": 2.5513077000032354,
+  "total_seconds": 42.80232960000103
+}

@@ -1,0 +1,23 @@
+{
+  "split": "validation",
+  "checkpoint": "E:\\hku\\DASE7506\\MP1\\experiments\\ensemble-wide70-small30\\checkpoint.pt",
+  "targets": 376599,
+  "utf8_bytes": 1148007,
+  "calibrated_ensemble_bpb": 1.5080094787581089,
+  "feature_only_bpb": 1.4905918318009754,
+  "existing_local_train4_bpb": 1.4683344397836104,
+  "feature_before_other_caches_bpb": 1.4693978506831267,
+  "feature_after_other_caches_bpb": 1.4700042953059358,
+  "feature_before_delta_bpb": 0.0010634108995162261,
+  "feature_after_delta_bpb": 0.0016698555223253475,
+  "feature_before_half_gains_nats": [
+    -502.56315910529054,
+    -343.63310685577574
+  ],
+  "feature_after_half_gains_nats": [
+    -742.0642514624744,
+    -586.7029337609088
+  ],
+  "model_seconds": 36.06423209999775,
+  "cache_seconds": 6.443504500011841
+}

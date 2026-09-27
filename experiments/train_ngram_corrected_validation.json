@@ -1,0 +1,198 @@
+{
+  "split": "validation",
+  "train_tokens": 3613343,
+  "validation_targets": 376599,
+  "validation_bytes": 1148007,
+  "checkpoint_sha256": "5baa2582efdda60bf0d6fc7eb78dea5e46723a99d8654011ec26a2b973cb0465",
+  "base_ensemble_bpb": 1.5181747990796752,
+  "base_local_cache_bpb": 1.491136958499859,
+  "standalone": [
+    {
+      "order": 2,
+      "smoothing_alpha": 4.0,
+      "standalone_bpb": 2.2048401011897956
+    },
+    {
+      "order": 3,
+      "smoothing_alpha": 4.0,
+      "standalone_bpb": 2.1112472715046073
+    },
+    {
+      "order": 4,
+      "smoothing_alpha": 4.0,
+      "standalone_bpb": 2.1999099409396923
+    },
+    {
+      "order": 2,
+      "smoothing_alpha": 32.0,
+      "standalone_bpb": 2.162878279713538
+    },
+    {
+      "order": 3,
+      "smoothing_alpha": 32.0,
+      "standalone_bpb": 1.9494967049624574
+    },
+    {
+      "order": 4,
+      "smoothing_alpha": 32.0,
+      "standalone_bpb": 1.9410574818127468
+    }
+  ],
+  "best": [
+    {
+      "base": "local_cache",
+      "order": 4,
+      "smoothing_alpha": 4.0,
+      "gate_alpha": 0.0,
+      "weight": 0.1,
+      "bpb": 1.4741226340948828
+    },
+    {
+      "base": "local_cache",
+      "order": 4,
+      "smoothing_alpha": 4.0,
+      "gate_alpha": 0.0,
+      "weight": 0.05,
+      "bpb": 1.4764583067955641
+    },
+    {
+      "base": "local_cache",
+      "order": 4,
+      "smoothing_alpha": 32.0,
+      "gate_alpha": 0.0,
+      "weight": 0.1,
+      "bpb": 1.4784842543828545
+    },
+    {
+      "base": "local_cache",
+      "order": 4,
+      "smoothing_alpha": 4.0,
+      "gate_alpha": 0.0,
+      "weight": 0.2,
+      "bpb": 1.4790057552970157
+    },
+    {
+      "base": "local_cache",
+      "order": 4,
+      "smoothing_alpha": 32.0,
+      "gate_alpha": 0.0,
+      "weight": 0.05,
+      "bpb": 1.480084422339673
+    },
+    {
+      "base": "local_cache",
+      "order": 3,
+      "smoothing_alpha": 4.0,
+      "gate_alpha": 0.0,
+      "weight": 0.1,
+      "bpb": 1.4813464228403173
+    },
+    {
+      "base": "local_cache",
+      "order": 3,
+      "smoothing_alpha": 4.0,
+      "gate_alpha": 0.0,
+      "weight": 0.05,
+      "bpb": 1.4816661022224746
+    },
+    {
+      "base": "local_cache",
+      "order": 4,
+      "smoothing_alpha": 4.0,
+      "gate_alpha": 4.0,
+      "weight": 0.1,
+      "bpb": 1.481914041675736
+    },
+    {
+      "base": "local_cache",
+      "order": 4,
+      "smoothing_alpha": 4.0,
+      "gate_alpha": 4.0,
+      "weight": 0.2,
+      "bpb": 1.4822323094305825
+    },
+    {
+      "base": "local_cache",
+      "order": 3,
+      "smoothing_alpha": 32.0,
+      "gate_alpha": 0.0,
+      "weight": 0.1,
+      "bpb": 1.482951958923381
+    },
+    {
+      "base": "local_cache",
+      "order": 3,
+      "smoothing_alpha": 32.0,
+      "gate_alpha": 0.0,
+      "weight": 0.05,
+      "bpb": 1.482969684467825
+    },
+    {
+      "base": "local_cache",
+      "order": 4,
+      "smoothing_alpha": 32.0,
+      "gate_alpha": 0.0,
+      "weight": 0.2,
+      "bpb": 1.4835189924989558
+    },
+    {
+      "base": "local_cache",
+      "order": 3,
+      "smoothing_alpha": 4.0,
+      "gate_alpha": 4.0,
+      "weight": 0.1,
+      "bpb": 1.4836494489856713
+    },
+    {
+      "base": "local_cache",
+      "order": 4,
+      "smoothing_alpha": 4.0,
+      "gate_alpha": 4.0,
+      "weight": 0.05,
+      "bpb": 1.48385446436904
+    },
+    {
+      "base": "local_cache",
+      "order": 3,
+      "smoothing_alpha": 4.0,
+      "gate_alpha": 4.0,
+      "weight": 0.05,
+      "bpb": 1.4839336159297194
+    }
+  ],
+  "best_by_base": {
+    "ensemble": {
+      "base": "ensemble",
+      "order": 4,
+      "smoothing_alpha": 4.0,
+      "gate_alpha": 0.0,
+      "weight": 0.1,
+      "bpb": 1.4996908097961326
+    },
+    "local_cache": {
+      "base": "local_cache",
+      "order": 4,
+      "smoothing_alpha": 4.0,
+      "gate_alpha": 0.0,
+      "weight": 0.1,
+      "bpb": 1.4741226340948828
+    }
+  },
+  "unique_ngrams": {
+    "1": 1964,
+    "2": 298024,
+    "3": 1391944,
+    "4": 2410077
+  },
+  "full_asset_pickle_bytes": 81424385,
+  "full_asset_zlib_bytes": 25449199,
+  "pruned_ge2_asset_pickle_bytes": 19196381,
+  "pruned_ge2_asset_zlib_bytes": 7666596,
+  "model_checkpoint_bytes": 25709137,
+  "full_asset_plus_model_mib": 48.78839111328125,
+  "pruned_asset_plus_model_mib": 31.82957935333252,
+  "training_query_seconds": 31.93225210000128,
+  "model_seconds": 47.284340299995165,
+  "local_cache_seconds": 3.3309217000078206,
+  "total_seconds": 98.05831829999988
+}

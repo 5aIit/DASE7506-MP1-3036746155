@@ -1,0 +1,85 @@
+{
+  "frozen_at_utc": "2026-09-26T18:14:15.807683+00:00",
+  "protocol": "7506-mp1-wt2-v2",
+  "checkpoint_sha256": "5b99639aa30264a10ec0d9a7608317fec5e926b521ce205b64c2b9bfde1183e1",
+  "checkpoint_bytes": 58323858,
+  "code_directory": "E:\\hku\\DASE7506\\MP1\\MP1_student_starter\\code",
+  "inference_files": {
+    "hybrid.py": {
+      "sha256": "7dd3f2ead1a7109ed0425b7b49ffb064b54ff4b1f802ed1743b34920c908ce65",
+      "bytes": 2954
+    },
+    "calibrated_members.py": {
+      "sha256": "daa92889c0cdfde9aa5c69468813562c2dd1bb2ef296f3625377656de894af32",
+      "bytes": 3476
+    },
+    "local_cache.py": {
+      "sha256": "eb9299c6042f573360f1b4e99bd947c721f27f07e7ba8154c25f4b1b271c480e",
+      "bytes": 4556
+    },
+    "train_ngrams.py": {
+      "sha256": "c2097292541657cd66c1c36c2353de930850fd8fbacc721b4253bb7a1f4c0534",
+      "bytes": 5214
+    },
+    "continuation_ngrams.py": {
+      "sha256": "2767defaf5dcf773500cbbc0d55d030703639fe61746b15d3bd057c43084bc5a",
+      "bytes": 5562
+    },
+    "student_fast.py": {
+      "sha256": "b9b8be2781bd04183bd8a704dd129efbe65225c33682d93b4c2108f96696f271",
+      "bytes": 1756
+    },
+    "model_fast.py": {
+      "sha256": "eec6d880238be2e5634544a6b16773e269cdf6408eae25314e86d97c152d9f62",
+      "bytes": 1724
+    },
+    "student.py": {
+      "sha256": "2f8af49b4620a1dba62676f36a079129e935e657022f914f1a2cc151fc365e6f",
+      "bytes": 2842
+    },
+    "model.py": {
+      "sha256": "6cce142a31d396f017319543f50d70f30fa6da740729af01c8baed13c6f671f9",
+      "bytes": 2771
+    },
+    "common.py": {
+      "sha256": "d40dc1fe6578b5993a563bdb4d9e5317ddc9fae8afe48822b66571c7042e84db",
+      "bytes": 3302
+    },
+    "evaluate.py": {
+      "sha256": "128bcb2dab0be0d427505bddb4671e3ab3a8f78e114be79a689c0f9029af133d",
+      "bytes": 3437
+    },
+    "data/tokenizer.json": {
+      "sha256": "020d1bc6aa4449c4f352b2e03d0e0fb4f39287f15297705e421b1fa7d817262e",
+      "bytes": 121943
+    },
+    "data/manifest.json": {
+      "sha256": "f4790bb599d9fcd04e48263e685335e2f62d9bca0324b08061a10c38984f4fe4",
+      "bytes": 682
+    }
+  },
+  "uncompressed_inference_asset_bytes": 58484077,
+  "uncompressed_inference_asset_mib": 55.77476215362549,
+  "asset_limit_pass": true,
+  "selection": "No new optimization after user stop request. Keep completed p2 continuation + medium160 KN candidate; p3 fixed-setting validation was worse. Test not yet scored for this candidate.",
+  "selected_validation_bpb": 1.4435484117360478,
+  "rejected_drop03_fixed_validation_bpb": 1.4457439408252866,
+  "frozen_settings": {
+    "large_temperature": 1.1,
+    "small_temperature": 1.1,
+    "small_weight": 0.25,
+    "bias_scale": 0.05,
+    "ngram_method": "continuation",
+    "ngram_discount": 0.5,
+    "ngram_weight": 0.125,
+    "ngram_alpha": 4.0
+  },
+  "neural_ancestry_processed_targets": 294912000,
+  "count_model_train_tokens": 3613343,
+  "required_final_checks": [
+    "causal contract",
+    "same-machine CPU FP32 full test <=5x baseline",
+    "process-tree peak RAM <=4GiB",
+    "inference files and weights unchanged after scoring"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "checkpoint": "E:\\hku\\DASE7506\\MP1\\experiments\\baseline-gpt-s17-fp32\\run\\checkpoint.pt",
+  "checkpoint_sha256": "4f4b05f61016cc22cd2216aa6f08288ce31e70b5ac30dc6003bc09e652a0fbfb",
+  "cpu_fp32_evaluation": {
+    "validation": {
+      "sampled_peak_process_tree_working_set_bytes": 2058104832,
+      "peak_ram_upper_bound_bytes": 2338643968,
+      "peak_ram_upper_bound_gib": 2.1780319213867188,
+      "ram_limit_gib": 4.0,
+      "ram_limit_pass": true,
+      "measurement": "Windows process-tree working set; conservative sum of per-process PeakWorkingSetSize",
+      "scope": "run_baseline.py process plus evaluate.py process tree; includes imports, data/model loading, scoring, and saving"
+    },
+    "test": {
+      "sampled_peak_process_tree_working_set_bytes": 1422086144,
+      "peak_ram_upper_bound_bytes": 1807478784,
+      "peak_ram_upper_bound_gib": 1.6833457946777344,
+      "ram_limit_gib": 4.0,
+      "ram_limit_pass": true,
+      "measurement": "Windows process-tree working set; conservative sum of per-process PeakWorkingSetSize",
+      "scope": "run_baseline.py process plus evaluate.py process tree; includes imports, data/model loading, scoring, and saving"
+    }
+  }
+}
