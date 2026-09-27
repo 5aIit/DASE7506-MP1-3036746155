@@ -1,0 +1,10 @@
+__pycache__/
+*.py[cod]
+.venv/
+*.pt
+*.npy
+*.npz
+.DS_Store
+__MACOSX/
+verification_outputs/
+runs/

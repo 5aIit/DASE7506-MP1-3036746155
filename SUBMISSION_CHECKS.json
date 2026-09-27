@@ -1,0 +1,47 @@
+{
+  "checked_at_utc": "2026-09-27T09:13:07.219379+00:00",
+  "scope": "Clean submission copied into an isolated directory, checkpoint archive extracted, no retraining.",
+  "checks": [
+    {
+      "check": "contract_tests",
+      "passed": true
+    },
+    {
+      "check": "actual_checkpoint_contract",
+      "passed": true
+    },
+    {
+      "check": "full_test_and_portable_ram_runner",
+      "passed": true
+    }
+  ],
+  "all_frozen_inference_hashes_match": {
+    "hybrid.py": true,
+    "calibrated_members.py": true,
+    "local_cache.py": true,
+    "train_ngrams.py": true,
+    "continuation_ngrams.py": true,
+    "student_fast.py": true,
+    "model_fast.py": true,
+    "student.py": true,
+    "model.py": true,
+    "common.py": true,
+    "evaluate.py": true,
+    "data/tokenizer.json": true,
+    "data/manifest.json": true
+  },
+  "course_data_hashes_match": true,
+  "checkpoint_sha256": "5b99639aa30264a10ec0d9a7608317fec5e926b521ce205b64c2b9bfde1183e1",
+  "reproduced_test_bpb": 1.4583128252943809,
+  "expected_test_bpb": 1.4583128252943809,
+  "targets": 428405,
+  "utf8_bytes": 1292013,
+  "package_check_test_seconds": 56.31001660000038,
+  "package_check_peak_ram_upper_bound_gib": 2.470306396484375,
+  "report_pages": 8,
+  "report_sha256": "04fb19647f59a59d75988dd5c30a2f9fcf529080d508e6649f23b7c655bcabe4",
+  "note": "Isolated package reproduction and sequential same-machine four-thread CPU timing passed. Reported historical measurements are preserved in experiments/final-hybrid-v3; this package check is additional evidence and did not change the predictor.",
+  "package_check_baseline_test_seconds": 11.632057800001348,
+  "package_check_cpu_ratio": 4.840933355746724,
+  "package_check_cpu_limit_pass": true
+}
